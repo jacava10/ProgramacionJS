@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Res_IMC</title>
+    <style type="text/css">
+        body
+        {
+            background-color: rgb(26, 50, 182);
+            color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        strong
+        {
+            background-color: rgb(41, 7, 136);
+        }
+    </style>
+</head>
+<body>
+    <p><strong>Este es el Resultado de su IMC </strong></p>
+    <script type="text/javascript">
+        var peso = prompt ("Digite su peso en Kg. ");
+        var altura = prompt ("Digite su estatura ejem 1.65 ");
+        var res = Math.pow(altura,2);
+        var z = peso / res;
+        document.write ("Tienes un IMC de : " + z);
+        if (z < 25.0 ){
+            document.write("              tu situacion es Normal")
+        }
+        else{
+           if (z >= 30.0){
+              document.write("              tu situacion es de SOBREPESO") 
+           }
+           else{
+                document.write("              tu situacion es de Obesidad")
+           }
+        }
+    </script>
+</body>
+</html>
